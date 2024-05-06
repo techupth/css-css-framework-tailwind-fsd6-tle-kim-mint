@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <body class="bg-slate-200 flex justify-center items-center w-screen h-screen">
+    <div
+      class="p-11 max-w-md bg-white rounded-xl shadow-lg flex flex-col flex gap-4"
+    >
+      <div>
+        <label for="name and password"
+          ><h1 class="text-zinc-600 capitalize text-lg">
+            Login to Website
+          </h1></label
+        >
+      </div>
 
-<body>
-  <!-- Start coding here -->
-</body>
-
+      <div class="flex flex-row gap-1 justify-between">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="p-2 border border-zinc-200 hover:border-violet-500 focus:border-violet-300 outline-none"
+        />
+      </div>
+      <div class="flex flex-row gap-1 justify-between">
+        <label for="password">password</label>
+        <input
+          type="password"
+          id="password"
+          class="p-2 border border-zinc-200 hover:border-violet-500 focus:border-violet-300 outline-none"
+        />
+      </div>
+      <div class="flex-row flex justify-between gap-4">
+        <button
+          class="w-36 p-2 rounded-full text-white bg-violet-500 shadow-1 hover:border-violet-400 active:border-violet-400 focus:ring-2 focus:ring-violet-300"
+        >
+          Sign In
+        </button>
+        <button
+          class="text-violet-600 w-36 rounded-full bg-white hover:bg-violet-100 active:border-violet-500 focus:ring-2 focus:ring-violet-300"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
