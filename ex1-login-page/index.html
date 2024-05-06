@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <body
+    class="w-screen h-screen bg-slate-200 flex justify-center items-center box-border"
+  >
+    <form class="bg-white rounded-xl p-8 flex flex-col gap-[20px]">
+      <h1 class="text-zinc-600 text-xl">Login to Website</h1>
 
-<body>
-  <!-- Start coding here -->
-</body>
-
+      <div class="flex justify-between items-center">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          class="p-2 border-2 border-zinc-600 rounded-xl hover:border-violet-500 focus:outline-none focus:border-violet-300"
+        />
+      </div>
+      <div class="flex justify-between items-center">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          class="p-2 border-2 border-zinc-600 rounded-xl hover:border-violet-500 focus:outline-none focus:border-violet-300"
+        />
+      </div>
+      <div class="flex gap-1">
+        <button
+          type="button"
+          class="w-36 p-2 rounded-full bg-violet-500 text-white hover:bg-violet-400 active:bg-violet-600 focus:ring ring-violet-300"
+        >
+          Sign in
+        </button>
+        <button
+          type="button"
+          class="w-36 p-2 rounded-full bg-white text-violet-600 hover:bg-violet-100 focus:ring ring-violet-300"
+        >
+          Sign up
+        </button>
+      </div>
+    </form>
+  </body>
 </html>
